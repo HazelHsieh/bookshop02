@@ -22,16 +22,47 @@ body .navbar {
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+  width: 75%;
 }
 
-.orderlist .order-count {
+@media (max-width: 798px) {
+  .progress {
+    width: 60%;
+    top: 38%;
+  }
+}
+
+@media (max-width: 530px) {
+  .progress {
+    width: 50%;
+    top: 28%;
+  }
+}
+
+.orderlist .order-product-name {
+  width: 200px;
+}
+
+.orderlist .order-count2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
+@media (max-width: 530px) {
+  .orderlist .order-product-name {
+    width: 140px;
+  }
+  .orderlist .order-count {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 .orderlist .ml-1 {
-  width: 50px;
+  width: 40px;
 }
 
 .order-price {
